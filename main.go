@@ -1,7 +1,9 @@
 package main
 
 import (
+	"fmt"
 	"log"
+	"mofafe/blog_tool/markdown"
 	"os"
 	"strconv"
 	"text/template"
@@ -9,10 +11,10 @@ import (
 )
 
 type Html struct {
-	Title    string
-	Date     int
+	Title       string
+	Date        int
 	Description string
-	Text     string
+	Text        string
 }
 
 func Date() int {
@@ -24,11 +26,16 @@ func Date() int {
 }
 
 func main() {
+	var title string
+	var description string
+	fmt.Scan(&title)
+	fmt.Scan(&description)
+
 	d := Html{
-		Title:    "test",
-		Date:     Date(),
-		Description "test",
-		Text:     "test",
+		Title:       title,
+		Date:        Date(),
+		Description: description,
+		Text:        markdown.MdToHtml(),
 	}
 
 	DateString := strconv.Itoa(Date())
