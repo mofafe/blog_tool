@@ -11,7 +11,6 @@ import (
 type Html struct {
 	Title    string
 	Date     int
-	Headline string
 	Text     string
 }
 
@@ -27,7 +26,6 @@ func main() {
 	d := Html{
 		Title:    "test",
 		Date:     Date(),
-		Headline: "test",
 		Text:     "test",
 	}
 
