@@ -1,3 +1,3 @@
-module mofafe/blog_tool
+module github.com/mofafe/blog_tool
 
 go 1.25.1

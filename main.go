@@ -3,11 +3,12 @@ package main
 import (
 	"fmt"
 	"log"
-	"mofafe/blog_tool/markdown"
 	"os"
 	"strconv"
 	"text/template"
 	"time"
+
+	"github.com/mofafe/blog_tool/markdown"
 )
 
 type Html struct {
